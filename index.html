@@ -11,26 +11,26 @@
     <div class="calculator">
         <div class="screen"></div>
         <div class="buttons">
-            <button class="operation" id="clear">AC</button>
-            <button class="operation" id="factorial">!</button>
-            <button class="operation" id="percentage">%</button>
-            <button class="operation" id="division">/</button>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button class="operation" id="multiplication">*</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button class="operation" id="subtraction">-</button>
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button class="operation" id="plus">+</button>
-            <button id="zero">0</button>
-            <button id="dot">.</button>
-            <button id="backspace">DEL</button>
-            <button class="operation" id="equal">=</button>
+            <button class="operation" id="clear" onclick="reset();">AC</button>
+            <button class="operation" id="factorial" onclick="handler('!');">!</button>
+            <button class="operation" id="percentage" onclick="handler('%');">%</button>
+            <button class="operation" id="division" onclick="handler('/');">/</button>
+            <button id="seven" onclick="addStr(7);">7</button>
+            <button id="eight" onclick="addStr(8);">8</button>
+            <button id="nine" onclick="addStr(9);">9</button>
+            <button class="operation" id="multiplication" onclick="handler('*');">*</button>
+            <button id="four" onclick="addStr(4);">4</button>
+            <button id="five" onclick="addStr(5);">5</button>
+            <button id="six" onclick="addStr(6);">6</button>
+            <button class="operation" id="subtraction" onclick="handler('-');">-</button>
+            <button id="one" onclick="addStr(1);">1</button>
+            <button id="two" onclick="addStr(2);">2</button>
+            <button id="three" onclick="addStr(3);">3</button>
+            <button class="operation" id="plus" onclick="handler('+');">+</button>
+            <button id="zero" onclick="addStr(0);">0</button>
+            <button id="dot" onclick="addDot();">.</button>
+            <button id="backspace" onclick="deleteChar();">DEL</button>
+            <button class="operation" id="equal" onclick="handler('=')">=</button>
         </div>
     </div>
 </body>
